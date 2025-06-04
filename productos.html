@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo completo de pulseras artesanales YARE CREACIONES">
+    <title>Productos - YARE CREACIONES</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header" role="banner">
+        <div class="header-container">
+            <div class="logo" itemscope itemtype="http://schema.org/Organization">
+                <h1 itemprop="name">YARE CREACIONES</h1>
+                <p itemprop="description">Pulseras artesanales</p>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="menu-icon"></span>
+            </button>
+            
+            <nav class="main-nav" role="navigation" aria-label="Menú principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html" aria-current="page">Productos</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="carrito.html" class="carrito-link">
+                        Carrito
+                        <span id="contador-carrito" aria-live="polite">0</span>
+                    </a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="catalogo" aria-labelledby="catalogo-heading">
+            <div class="container">
+                <h2 id="catalogo-heading">Nuestras Pulseras</h2>
+                
+                <div class="filtros" aria-label="Filtros de productos">
+                    <button class="btn btn-filter active" data-categoria="todos">Todas</button>
+                    <button class="btn btn-filter" data-categoria="clasicas">Clásicas</button>
+                    <button class="btn btn-filter" data-categoria="personalizadas">Personalizadas</button>
+                    <button class="btn btn-filter" data-categoria="especiales">Especiales</button>
+                </div>
+                
+                <div class="productos-grid">
+                    <article class="producto" itemscope itemtype="http://schema.org/Product" data-categoria="clasicas">
+                        <figure>
+                            <img src="https://onixm.com/wp-content/uploads/2023/09/PLSRMNFTMRJYCRTL-pulsera-roja-mano-de-Fatima3.jpg" 
+                                 alt="Pulsera roja con símbolo de mano de Fátima" 
+                                 itemprop="image"
+                                 loading="lazy">
+                        </figure>
+                        <div class="producto-info">
+                            <h3 itemprop="name">Pulsera Roja Pasión</h3>
+                            <p class="descripcion" itemprop="description">Pulsera tejida en hilo rojo con nudo ajustable y símbolo de protección.</p>
+                            <div class="producto-precio" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD">
+                                <span itemprop="price" content="12.99">$12.99</span>
+                            </div>
+                            <button class="btn btn-secondary btn-add-to-cart" data-id="1">Añadir al carrito</button>
+                        </div>
+                    </article>
+                    
+                    <article class="producto" itemscope itemtype="http://schema.org/Product" data-categoria="clasicas">
+                        <figure>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQuP7G0Hr7L0B4ypv2F_shtTPsR7NFJZNlkf2nINEDkAsKVaFTvVnJdYpaIUfAVEvglg0&usqp=CAUS" 
+                                 alt="Pulsera azul con detalles en plata" 
+                                 itemprop="image"
+                                 loading="lazy">
+                        </figure>
+                        <div class="producto-info">
+                            <h3 itemprop="name">Pulsera Azul Océano</h3>
+                            <p class="descripcion" itemprop="description">Pulsera en tonos azules con detalle plateado y ajuste seguro.</p>
+                            <div class="producto-precio" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD">
+                                <span itemprop="price" content="14.99">$14.99</span>
+                            </div>
+                            <button class="btn btn-secondary btn-add-to-cart" data-id="2">Añadir al carrito</button>
+                        </div>
+                    </article>
+                    
+                    <article class="producto" itemscope itemtype="http://schema.org/Product" data-categoria="clasicas">
+                        <figure>
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_833760-MLM70518404604_072023-O.webp" 
+                                 alt="Pulsera multicolor estilo arcoíris" 
+                                 itemprop="image"
+                                 loading="lazy">
+                        </figure>
+                        <div class="producto-info">
+                            <h3 itemprop="name">Pulsera Arcoíris</h3>
+                            <p class="descripcion" itemprop="description">Combinación de colores vibrantes tejida a mano, ideal para verano.</p>
+                            <div class="producto-precio" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD">
+                                <span itemprop="price" content="16.99">$16.99</span>
+                            </div>
+                            <button class="btn btn-secondary btn-add-to-cart" data-id="3">Añadir al carrito</button>
+                        </div>
+                    </article>
+                    
+                    <article class="producto" itemscope itemtype="http://schema.org/Product" data-categoria="personalizadas">
+                        <figure>
+                            <img src="https://m.media-amazon.com/images/I/51OkGuyiNUL._UF1000,1000_QL80_.jpg" 
+                                 alt="Pulsera negra con inicial personalizada" 
+                                 itemprop="image"
+                                 loading="lazy">
+                        </figure>
+                        <div class="producto-info">
+                            <h3 itemprop="name">Pulsera con Inicial</h3>
+                            <p class="descripcion" itemprop="description">Pulsera elegante con inicial y corazón, completamente personalizable.</p>
+                            <div class="producto-precio" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD">
+                                <span itemprop="price" content="15.99">$15.99</span>
+                            </div>
+                            <button class="btn btn-secondary btn-add-to-cart" data-id="4">Añadir al carrito</button>
+                        </div>
+                    </article>
+                    
+                    <article class="producto" itemscope itemtype="http://schema.org/Product" data-categoria="especiales">
+                        <figure>
+                            <img src="https://i.etsystatic.com/5841031/r/il/176c22/5105974011/il_570xN.5105974011_mrkq.jpg" 
+                                 alt="Pulsera verde con piedras naturales" 
+                                 itemprop="image"
+                                 loading="lazy">
+                        </figure>
+                        <div class="producto-info">
+                            <h3 itemprop="name">Pulsera Verde Natural</h3>
+                            <p class="descripcion" itemprop="description">Tonos verdes claros con piedras naturales y detalles dorados.</p>
+                            <div class="producto-precio" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD">
+                                <span itemprop="price" content="13.99">$13.99</span>
+                            </div>
+                            <button class="btn btn-secondary btn-add-to-cart" data-id="5">Añadir al carrito</button>
+                        </div>
+                    </article>
+                    
+                    <article class="producto" itemscope itemtype="http://schema.org/Product" data-categoria="especiales">
+                        <figure>
+                            <img src="https://joyasnellysalas.com/wp-content/uploads/20211221163550_IMG_7405-scaled-1-1024x1024.jpg" 
+                                 alt="Pulsera rosa con dije de corazón" 
+                                 itemprop="image"
+                                 loading="lazy">
+                        </figure>
+                        <div class="producto-info">
+                            <h3 itemprop="name">Pulsera Corazón</h3>
+                            <p class="descripcion" itemprop="description">Pulsera rosa con pequeño dije en forma de corazón y detalles brillantes.</p>
+                            <div class="producto-precio" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD">
+                                <span itemprop="price" content="18.99">$18.99</span>
+                            </div>
+                            <button class="btn btn-secondary btn-add-to-cart" data-id="6">Añadir al carrito</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <address>
+                    <p><a href="mailto:yarecreaciones@gmail.com">yarecreaciones@gmail.com</a></p>
+                    <p><a href="tel:+34123456789">+34 123 456 789</a></p>
+                </address>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Enlaces rápidos</h3>
+                <nav aria-label="Enlaces rápidos">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Redes sociales</h3>
+                <div class="social-icons" aria-label="Redes sociales">
+                    <a href="#" aria-label="Facebook"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQnULcBfSqH9C3ooVVkPDA9rxRyqHoR3M1ng&s" alt="Facebook" loading="lazy"></a>
+                    <a href="#" aria-label="Instagram"><img src="https://i.blogs.es/759769/trucosinstagram/650_1200.webp" alt="Instagram" loading="lazy"></a>
+                    <a href="#" aria-label="Pinterest"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQofH0MnMW_Di5BSWE83wUMzMa7-BvB7KSNkw&s" alt="Pinterest" loading="lazy"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; <span id="current-year">2023</span> YARE CREACIONES. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js" defer></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const nav = document.querySelector('.main-nav');
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !expanded);
+            nav.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+        
+        document.querySelectorAll('.btn-filter').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.btn-filter').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                const categoria = this.dataset.categoria;
+                document.querySelectorAll('.producto').forEach(producto => {
+                    if (categoria === 'todos' || producto.dataset.categoria === categoria) {
+                        producto.style.display = 'block';
+                    } else {
+                        producto.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

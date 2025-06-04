@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carrito de compras de YARE CREACIONES - Finaliza tu pedido de pulseras artesanales">
+    <title>Carrito - YARE CREACIONES</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header" role="banner">
+        <div class="header-container">
+            <div class="logo" itemscope itemtype="http://schema.org/Organization">
+                <h1 itemprop="name">YARE CREACIONES</h1>
+                <p itemprop="description">Pulseras artesanales</p>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="menu-icon"></span>
+            </button>
+            
+            <nav class="main-nav" role="navigation" aria-label="Menú principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="carrito.html" aria-current="page" class="carrito-link">
+                        Carrito
+                        <span id="contador-carrito" aria-live="polite">2</span>
+                    </a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="carrito" aria-labelledby="carrito-heading">
+            <div class="container">
+                <h2 id="carrito-heading">Tu Carrito de Compras</h2>
+                
+                <div class="carrito-container">
+                    <div class="items-carrito">
+                        <article class="item" itemscope itemtype="http://schema.org/Product">
+                            <figure>
+                                <img src="https://mellany.pe/wp-content/uploads/2024/02/pulsera-hilo-rojo-mellany-joyas-y-accesorios.jpg" 
+                                     alt="Pulsera Roja para compartir" 
+                                     itemprop="image"
+                                     loading="lazy">
+                            </figure>
+                            <div class="item-info">
+                                <h3 itemprop="name">Pulsera Roja para compartir</h3>
+                                <div class="producto-precio" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="USD">
+                                    <span itemprop="price" content="40.00">$40.00</span>
+                                </div>
+                                <div class="cantidad" aria-label="Cantidad">
+                                    <button class="btn-cantidad" aria-label="Reducir cantidad">-</button>
+                                    <span>1</span>
+                                    <button class="btn-cantidad" aria-label="Aumentar cantidad">+</button>
+                                </div>
+                            </div>
+                            <button class="btn-eliminar" aria-label="Eliminar producto">Eliminar</button>
+                        </article>
+                        
+                        <article class="item" itemscope itemtype="http://schema.org/Product">
+                            <figure>
+                                <img src="https://i.pinimg.com/736x/1e/b9/48/1eb948d6b3eb687f0a01f6638996892f.jpg" 
+                                     alt="Pulsera Arcoíris" 
+                                     itemprop="image"
+                                     loading="lazy">
+                            </figure>
+                            <div class="item-info">
+                                <h3 itemprop="name">Pulsera Arcoíris</h3>
+                                <div class="producto-precio" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="USD">
+                                    <span itemprop="price" content="16.99">$16.99</span>
+                                </div>
+                                <div class="cantidad" aria-label="Cantidad">
+                                    <button class="btn-cantidad" aria-label="Reducir cantidad">-</button>
+                                    <span>1</span>
+                                    <button class="btn-cantidad" aria-label="Aumentar cantidad">+</button>
+                                </div>
+                            </div>
+                            <button class="btn-eliminar" aria-label="Eliminar producto">Eliminar</button>
+                        </article>
+                    </div>
+                    
+                    <aside class="resumen-compra" aria-labelledby="resumen-heading">
+                        <h3 id="resumen-heading">Resumen de Compra</h3>
+                        <div class="subtotal">
+                            <p>Subtotal (2 items)</p>
+                            <p>$56.99</p>
+                        </div>
+                        <div class="envio">
+                            <p>Envío</p>
+                            <p>$3.00</p>
+                        </div>
+                        <div class="total">
+                            <p>Total</p>
+                            <p>$59.99</p>
+                        </div>
+                        <button class="btn btn-primary btn-pagar">Proceder al pago</button>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <address>
+                    <p><a href="mailto:yarecreaciones@gmail.com">yarecreaciones@gmail.com</a></p>
+                    <p><a href="tel:+34123456789">+34 123 456 789</a></p>
+                </address>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Enlaces rápidos</h3>
+                <nav aria-label="Enlaces rápidos">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Redes sociales</h3>
+                <div class="social-icons" aria-label="Redes sociales">
+                    <a href="#" aria-label="Facebook"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQnULcBfSqH9C3ooVVkPDA9rxRyqHoR3M1ng&s" alt="Facebook" loading="lazy"></a>
+                    <a href="#" aria-label="Instagram"><img src="https://i.blogs.es/759769/trucosinstagram/650_1200.webp" alt="Instagram" loading="lazy"></a>
+                    <a href="#" aria-label="Pinterest"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQofH0MnMW_Di5BSWE83wUMzMa7-BvB7KSNkw&s" alt="Pinterest" loading="lazy"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; <span id="current-year">2023</span> YARE CREACIONES. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js" defer></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const nav = document.querySelector('.main-nav');
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !expanded);
+            nav.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+        
+        // Funcionalidad del carrito
+        document.querySelectorAll('.btn-cantidad').forEach(button => {
+            button.addEventListener('click', function() {
+                const span = this.parentElement.querySelector('span');
+                let cantidad = parseInt(span.textContent);
+                
+                if (this.textContent === '+' && cantidad < 10) {
+                    cantidad++;
+                } else if (this.textContent === '-' && cantidad > 1) {
+                    cantidad--;
+                }
+                
+                span.textContent = cantidad;
+                // Aquí deberías actualizar los totales
+            });
+        });
+        
+        document.querySelectorAll('.btn-eliminar').forEach(button => {
+            button.addEventListener('click', function() {
+                this.closest('.item').remove();
+                // Aquí deberías actualizar los totales y el contador
+            });
+        });
+        
+        document.querySelector('.btn-pagar').addEventListener('click', function() {
+            alert('Redirigiendo al proceso de pago...');
+            // En una implementación real, redirigirías a la página de pago
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con YARE CREACIONES para consultas y pedidos personalizados">
+    <title>Contacto - YARE CREACIONES</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header" role="banner">
+        <div class="header-container">
+            <div class="logo" itemscope itemtype="http://schema.org/Organization">
+                <h1 itemprop="name">YARE CREACIONES</h1>
+                <p itemprop="description">Pulseras artesanales</p>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="menu-icon"></span>
+            </button>
+            
+            <nav class="main-nav" role="navigation" aria-label="Menú principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="carrito.html" class="carrito-link">
+                        Carrito
+                        <span id="contador-carrito" aria-live="polite">0</span>
+                    </a></li>
+                    <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="contacto" aria-labelledby="contacto-heading">
+            <div class="container">
+                <h2 id="contacto-heading">Contáctanos</h2>
+                
+                <div class="contacto-container">
+                    <div class="info-contacto">
+                        <h3>Información de contacto</h3>
+                        <address>
+                            <p><strong>Email:</strong> <a href="mailto:yarecreaciones@gmail.com">yarecreaciones@gmail.com</a></p>
+                            <p><strong>Teléfono:</strong> <a href="tel:+34123456789">+34 123 456 789</a></p>
+                            <p><strong>Dirección:</strong> Calle Artesanal 123, Barcelona, España</p>
+                        </address>
+                        
+                        <h3>Horario de atención</h3>
+                        <p>Lunes a Viernes: 9:00 - 18:00</p>
+                        <p>Sábados: 10:00 - 14:00</p>
+                    </div>
+                    
+                    <form id="formulario-contacto" class="formulario-contacto" aria-label="Formulario de contacto">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required aria-required="true">
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" id="asunto" name="asunto">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required aria-required="true"></textarea>
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <address>
+                    <p><a href="mailto:yarecreaciones@gmail.com">yarecreaciones@gmail.com</a></p>
+                    <p><a href="tel:+34123456789">+34 123 456 789</a></p>
+                </address>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Enlaces rápidos</h3>
+                <nav aria-label="Enlaces rápidos">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Redes sociales</h3>
+                <div class="social-icons" aria-label="Redes sociales">
+                    <a href="#" aria-label="Facebook"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQnULcBfSqH9C3ooVVkPDA9rxRyqHoR3M1ng&s" alt="Facebook" loading="lazy"></a>
+                    <a href="#" aria-label="Instagram"><img src="https://i.blogs.es/759769/trucosinstagram/650_1200.webp" alt="Instagram" loading="lazy"></a>
+                    <a href="#" aria-label="Pinterest"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQofH0MnMW_Di5BSWE83wUMzMa7-BvB7KSNkw&s" alt="Pinterest" loading="lazy"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; <span id="current-year">2023</span> YARE CREACIONES. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js" defer></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const nav = document.querySelector('.main-nav');
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !expanded);
+            nav.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+        
+        document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let isValid = true;
+            
+            // Validar campos
+            const nombre = document.getElementById('nombre');
+            const email = document.getElementById('email');
+            const mensaje = document.getElementById('mensaje');
+            
+            // Resetear mensajes de error
+            document.querySelectorAll('.error-message').forEach(el => {
+                el.textContent = '';
+            });
+            
+            // Validar nombre
+            if (nombre.value.trim() === '') {
+                nombre.nextElementSibling.textContent = 'Por favor ingresa tu nombre';
+                isValid = false;
+            }
+            
+            // Validar email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value)) {
+                email.nextElementSibling.textContent = 'Por favor ingresa un email válido';
+                isValid = false;
+            }
+            
+            // Validar mensaje
+            if (mensaje.value.trim() === '') {
+                mensaje.nextElementSibling.textContent = 'Por favor ingresa tu mensaje';
+                isValid = false;
+            }
+            
+            if (isValid) {
+                alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+                this.reset();
+            }
+        });
+    </script>
+</body>
+</html>
